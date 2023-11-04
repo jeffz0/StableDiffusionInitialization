@@ -310,18 +310,28 @@
                 </p>
 
                 <table width="100%" align="center" style="margin-left:10px" cellspacing="0" cellpadding="0" border="0">
-                <tr>
-                    <th width="50%" valign="top" align="center">
-                    <img src="./images/mean_blurred_inference.png" alt="sym" width="100%"></a>
-                    <p style="line-height:1.3; font-size:12pt">DDIM Training + Mean Offset Inference</p>
-                    </th>
-              
-                    <th width="50%" valign="top" align="center">
-                    <img src="./images/mean_blur_training.png" alt="sym" width="100%"></a>
-                    <p style="line-height:1.3; font-size:12pt">Mean Offset Training + Inference</p>
-                    </th>
-                </tr>
-            </table>
+                    <tr>
+                        <th width="50%" valign="top" align="center">
+                        <img src="./images/mean_blurred_inference.png" alt="sym" width="100%"></a>
+                        <p style="line-height:1.3; font-size:12pt">DDIM Training + Mean Offset Inference</p>
+                        </th>
+                  
+                        <th width="50%" valign="top" align="center">
+                        <img src="./images/mean_blur_training.png" alt="sym" width="100%"></a>
+                        <p style="line-height:1.3; font-size:12pt">Mean Offset Training + Inference</p>
+                        </th>
+                    </tr>
+                </table>
+
+                <br>
+                <h4>
+                    Application to ControlNet
+                </h4>
+                <p class="text-justify">
+                    We apply our method to ControlNet for the task of virtual try-on using our dataset.
+                    We mask out the region of a garment from the person and adapt ControlNet to take the masked garment image as the condition. 
+                </p>
+                <img src="./model_diagram.svg" alt="Model diagram" style="display: block; margin-left: auto; margin-right: auto; width: 70%;">
                 
             </div>
         </div>
