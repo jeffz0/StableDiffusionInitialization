@@ -303,66 +303,25 @@
 
                 <br>
                 <h4>
-                    YouTube-MTC Dataset
+                    Results
                 </h4>
                 <p class="text-justify">
-                    For evaluation, we collect a dataset by annotating 4k clips from music videos in the YouTube8M dataset with natural language music descriptions. 
-                    These text descriptions are collected by providing annotators with audio only (no video), and contain diverse descriptions of different elements 
-                    of the music like genre, mood, instrumentation, and lyrics.
+                    Qualitatively, Mean Offset Training and Mean Offset Inference provides better text control because the relationship between initialization and text is preserved during training and inference.
                 </p>
 
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="text-center" style="max-width: 200px">
-                            <h5>Source Video</h5>
-                            <a href="https://www.youtube.com/watch?v=sdKN2YzJxbY&amp;t=89s">
-                                <img src="./ex1_blur.png" class="img-responsive" alt="overview">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="text-center">
-                            <h5>Music Description Annotation</h5>
-                            <code>
-                            A faint, simple acoustic piece of singing by a female vocalist with an acoustic guitar with a fast-paced strumming pattern in a closed room recorded live. great for singing along.
-                            </code>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="text-center" style="max-width: 200px">
-                            <a href="https://youtu.be/ze7p3GvtJDg?t=81">
-                                <img src="./ex3_blur.png" class="img-responsive" alt="overview">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="text-center">
-                            <code>
-                                Instrumental track featuring an ambient pad and bell-like sounds. Seems to be a film score.
-                            </code>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="text-center" style="max-width: 200px">
-                            <a href="https://youtu.be/vAkBE67nc50?t=157">
-                                <img src="./ex2_blur.png" class="img-responsive" alt="overview">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="text-center">
-                            <code>
-                                Hip-hop track with a dark synth pad with male aggressive rapping along with a chipmunk voice.
-                            </code>
-                        </div>
-                    </div>
-                </div>
+                <table width="100%" align="center" style="margin-left:10px" cellspacing="0" cellpadding="0" border="0">
+                <tr>
+                    <th width="50%" valign="top" align="center">
+                    <img src="./images/iis_logo.png" alt="sym" width="35%"></a>
+                    <p style="line-height:1.3; font-size:12pt">DDIM Training + Mean Offset Inference</p>
+                    </th>
+              
+                    <th width="50%" valign="top" align="center">
+                    <img src="./images/uiuc_logo.png" alt="sym" width="24%"></a>
+                    <p style="line-height:1.3; font-size:12pt">Mean Offset Training + Inference</p>
+                    </th>
+                </tr>
+            </table>
                 
             </div>
         </div>
