@@ -208,8 +208,8 @@
                     PCA-K Offset Training + Inference
                 </h4>
                 <p class="text-justify">
-                    We train a tri-modal model, which we call <code>ViML</code> for <code>Vi</code>deo to <code>M</code>usic with <code>L</code>anguage. The model fuses text and video input representations to query music samples. 
-                    We rely on per-modality Transformer encoders to encode sequences of features from base encoders (CLIP and DeepSim) and a fusion model to combine the video and text encodings. For training, we introduce a text dropout regularization mechanism which we show is critical to model performance. 
+                    Current state-of-the-art methods, such as DDIM, add noise to the image throughout all training steps.
+                    This approach assumes that initializing with pure noise during inference yields a similar outcome due to the small value of &alpha;<sub>t</sub>.
                 </p>
                 <img src="./images/pipeline.png" alt="Model diagram" style="display: block; margin-left: auto; margin-right: auto; width: 70%;">
 
